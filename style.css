@@ -3,3 +3,130 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	background-color: lightblue;
+}
+
+.header,
+.first,
+.second,
+.about,
+.more,
+.follow {
+	background-color: #fff;
+	padding: 10px;
+	margin: 10px;
+}
+
+.header {
+	display: grid;
+	height: 80px;
+	place-items: center;
+}
+
+#wrap {
+	display: grid;
+	grid-template-columns: 80fr 20fr;
+}
+
+main {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas: 'first' 'second';
+	gap: 10px;
+}
+
+aside {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas: 'about' 'more' 'follow';
+	gap: 10px;
+	margin-right: 10px;
+}
+
+.first {
+	grid-area: first;
+	margin-bottom: 0;
+}
+
+.second {
+	grid-area: second;
+}
+
+.about {
+	grid-area: about;
+}
+
+.more {
+	grid-area: more;
+}
+
+.follow {
+	grid-area: follow;
+}
+
+.first .section-title {
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.first .section-par {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.section-img,
+.about-img,
+.more-img {
+	background-color: salmon;
+	height: 50px;
+	display: grid;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.first p {
+	display: grid;
+	height: 50px;
+	align-items: center;
+}
+
+.first .desc {
+	margin-bottom: 10px;
+}
+
+.about .about-title {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.about .about-par {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.about,
+.more,
+.follow {
+	margin-bottom: 0;
+}
+
+.follow {
+	display: grid;
+	align-items: center;
+}
+
+.footer {
+	background-color: antiquewhite;
+	margin: 10px 20px 10px 10px;
+	display: grid;
+	height: 80px;
+	place-items: center;
+}
+
+.footer {
+	font-weight: bold;
+}
